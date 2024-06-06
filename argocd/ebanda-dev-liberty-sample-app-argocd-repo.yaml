@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ebanda-dev-liberty-sample-app-repo
+  namespace: ebanda-dev
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  url: https://github.com/erica-banda-03/ebanda-dev-liberty-sample-app-gitops.git
